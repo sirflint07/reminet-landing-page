@@ -4,9 +4,9 @@ import Image from 'next/image'; // If you're using Next.js. Otherwise, replace w
 const HeroSection = () => {
 
   const images = [
-    {src: '', size: 200, z: 1, alt: 'image-1', id: 1},
-    {src: '', size: 480, z: 2, alt: 'image-2', id: 2},
-    {src: '', size: 670, z: 3, alt: 'image-3', id: 3},
+    {src: '/img/person1.jpg', size: 200, z: 1, alt: 'image-1', id: 1},
+    {src: '/img/person2.jpg', size: 680, z: 2, alt: 'image-2', id: 2},
+    {src: '/img/person3.jpg', size: 970, z: 3, alt: 'image-3', id: 3},
   ]
   return (
     <section className="w-[90vw] mx-auto px-4 py-12 md:py-16 flex flex-col-reverse md:flex-row items-center gap-10 md:mb-10">
@@ -27,16 +27,29 @@ const HeroSection = () => {
       </div>
 
       {/* Small Devices (Image Collage) */}
-      <div>
-        {}
+      <div className='md:hidden flex flex-col justify-center items-center gap-4'>
+        {images.map((image, i) => (
+          <div
+            key={i}
+            className={`w-80 h-80 rounded-full border-2 border-accent overflow-hidden relative shadow-md`}
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              layout='fill'
+              objectFit='cover'
+             
+            />
+          </div>
+        ))}
       </div>
     {/* Medium Devices Upward */}
       {/* Right Content (Image Collage) */}
       <div className="md:w-1/2 flex flex-row justify-center md:justify-end md:relative h-80 w-full max-md:hidden md:visible">
         {/* Container to position circles */}
-        <div className="relative w-[300px] h-[40vh]">
+        <div className="relative w-[88%] h-[40vh]">
           {/* Circle 1 */}
-          <div className="block md:absolute z-30 w-24 h-24 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-white shadow-lg -top-4 md:-top-12 -left-20">
+          <div className="block md:absolute z-10 w-24 h-24 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-accent shadow-lg -top-4 md:-top-12 -left-20">
             <Image
               src="/img/person1.jpg"
               alt="Person 1"
@@ -45,7 +58,7 @@ const HeroSection = () => {
             />
           </div>
           {/* Circle 2 (center) */}
-          <div className="block md:absolute z-20 w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-lg top-16 left-16 md:top-20 md:left-20">
+          <div className="block md:absolute z-20 w-28 h-28 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full overflow-hidden border-8 border-[#f6f5f9] top-16 left-16 md:top-20 md:left-20">
             <Image
               src="/img/person2.jpg"
               alt="Person 2"
@@ -54,7 +67,7 @@ const HeroSection = () => {
             />
           </div>
           {/* Circle 3 */}
-          <div className="block md:absolute z-10 w-20 h-20 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg bottom-0 right-0 md:-bottom-4">
+          <div className="block md:absolute z-30 w-20 h-20 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-accent shadow-lg bottom-0 right-0 md:right-0 md:-bottom-20 lg:right-48 lg:-bottom-10">
             <Image
               src="/img/person3.jpg"
               alt="Person 3"
