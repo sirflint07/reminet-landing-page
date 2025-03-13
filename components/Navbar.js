@@ -25,8 +25,8 @@ function Navbar() {
   ];
 
   return (
-    <div className='shadow-sm py-6 max-md:w-[90vw] mx-auto'>
-      <nav className='flex justify-between container mx-auto items-center md:w-[92%] lg:[98%]'>
+    <div className='shadow-sm py-6 max-md:w-[100vw] mx-auto'>
+      <nav className='flex justify-between container mx-auto items-center w-[92vw] md:w-[92%] lg:[98%]'>
         {/* Logo */}
         <div className='flex items-center'>
           <Image src='/img/logo.png' alt='logo' width={40} height={40} />
@@ -85,11 +85,11 @@ function Navbar() {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 0, y: -20, transition: { duration: 0.1 } }}
             transition={{ duration: 0.3 }}
             className='md:hidden mt-4'
           >
-            <ul className='flex flex-col space-y-4 text-xl font-medium'>
+            <ul className='w-[90vw] mx-auto flex flex-col space-y-4 text-xl font-medium'>
               {navLinks.map((link) => (
                 <li
                   key={link.name}

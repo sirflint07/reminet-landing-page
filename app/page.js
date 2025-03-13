@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Course from "@/components/Courses";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Stats from "@/components/Stats";
@@ -11,6 +12,7 @@ export default function Home() {
         <Stats />
         <Partners />
         <About />
+        <Course />
       </div>
   );
 }
