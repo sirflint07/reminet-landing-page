@@ -3,7 +3,7 @@ import Course from "@/components/Courses";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Stats from "@/components/Stats";
-import Image from "next/image";
+import Webnar from "@/components/Webnar";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Partners />
         <About />
         <Course />
+        <Webnar />
       </div>
   );
 }

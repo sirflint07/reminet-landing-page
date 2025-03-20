@@ -133,3 +133,28 @@ export const techCourses = [
     description: 'Optimize your web applications for speed and efficiency. Learn techniques like lazy loading, image optimization, caching strategies, minification, and performance monitoring to improve user experience and SEO rankings.' 
   }
 ];
+
+
+export const Udemy = [
+  {
+    title: 'Web Development: Zero to Hero',
+    description: 'Learn the fundamentals of HTML, CSS, and JavaScript, and build fully responsive web applications.',
+    category: 'Web',
+    duration: '20h 50min',
+    image: '/img/web-development-courses.jpg'
+  },
+  {
+    title: 'Python: From Basics to Advanced',
+    description: 'Dive into Python syntax, data structures, and libraries, with hands-on projects for real-world applications.',
+    category: 'Programming',
+    duration: '15h 30min',
+    image: '/img/python.jpg'
+  },
+  {
+    title: 'Cybersecurity Fundamentals',
+    description: 'Understand cybersecurity threats, explore security tools, and learn best practices to protect systems.',
+    category: 'Security',
+    duration: '12h 45min',
+    image: '/img/web-dev.png'
+  }
+];
