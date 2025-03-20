@@ -158,3 +158,70 @@ export const Udemy = [
     image: '/img/web-dev.png'
   }
 ];
+
+export const stories = [
+    {
+      name: "Gabriel Valdivia",
+      role: "Principal Product Designer, Patreon",
+      quote:
+        "Cloudhub has emerged as an essential asset for the team at Patreon design. Amidst an accelerated expanding organization in which the product undergoes rapid changes, expert skills, guidance, Campsite enables us to maintain visibility.",
+        image: '/img/profile.jpeg'
+    },
+    {
+      name: "Buzz Usborne",
+      role: "Principal Designer, Buildsite",
+      quote:
+        "Our webinar success stories share inspiring accounts of how participants have unlocked new opportunities, enhanced their skills, and achieved significant milestones. These stories reflect the power of expert-led sessions.",
+        image: '/img/profile.jpeg'
+    },
+    {
+      name: "Buzz Usborne",
+      role: "Principal Designer, Buildsite",
+      quote:
+        "Webinar success stories highlight participants who transformed their journeys through expert insights, interactive learning, and practical takeaways. These inspiring experiences demonstrate how engaging content can drive success.",
+        image: '/img/profile.jpeg'
+    },
+    // Add 6 more stories to make a total of 9
+    {
+      name: "John Doe",
+      role: "Senior Developer, TechCorp",
+      quote:
+        "The webinar was a game-changer for our team. The insights we gained have directly impacted our project outcomes.",
+        image: '/img/profile.jpeg'
+    },
+    {
+      name: "Jane Smith",
+      role: "UX Designer, Innovate Inc.",
+      quote:
+        "The practical takeaways from the webinar have been invaluable. We've implemented several strategies that have improved our workflow.",
+        image: '/img/profile.jpeg'
+    },
+    {
+      name: "Alice Johnson",
+      role: "Product Manager, FutureTech",
+      quote:
+        "The expert-led sessions were incredibly insightful. We've seen a significant improvement in our team's performance.",
+        image: '/img/profile.jpeg'
+    },
+    {
+      name: "Bob Brown",
+      role: "CTO, NextGen Solutions",
+      quote:
+        "The webinar provided us with the tools we needed to tackle complex challenges. Highly recommended!",
+        image: '/img/profile.jpeg'
+    },
+    {
+      name: "Charlie Davis",
+      role: "Lead Engineer, CodeCraft",
+      quote:
+        "The interactive learning approach was fantastic. It kept us engaged and made the content easy to understand.",
+        image: '/img/profile.jpeg'
+    },
+    {
+      name: "Eve Wilson",
+      role: "Marketing Director, BrandBoost",
+      quote:
+        "The webinar was a great opportunity to learn from industry experts. We've already started applying the lessons learned.",
+        image: '/img/profile.jpeg'
+    },
+  ];

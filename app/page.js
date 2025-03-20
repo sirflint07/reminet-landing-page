@@ -3,6 +3,8 @@ import Course from "@/components/Courses";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Stats from "@/components/Stats";
+import SuccessStories from "@/components/Testimonials";
+// import TestimonialsCarousel from "@/components/Testimonials";
 import Webnar from "@/components/Webnar";
 
 export default function Home() {
@@ -14,6 +16,7 @@ export default function Home() {
         <About />
         <Course />
         <Webnar />
+        <SuccessStories />
       </div>
   );
 }
