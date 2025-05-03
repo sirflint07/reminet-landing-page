@@ -51,12 +51,12 @@ const SuccessStories = () => {
             <div key={index} className="px-4">
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <p className="text-gray-600 mb-6">{story.quote}</p>
-                    <div className="flex gap-4 items-center justify-between">
+                    <div className="flex gap-1 md:gap-4 items-center justify-between">
                         
-                        <h3 className="text-xl font-semibold text-gray-800 -mb-4">
+                        <h3 className="md:text-xl font-semibold text-gray-800 md:-mb-4 text-sm">
                         {story.name}
                         </h3>
-                        <div className="w-10 h-10 rounded-full border-4 border-gray-700 relative overflow-clip -mb-2">
+                        <div className="lg:w-10 lg:h-10 w-8 h-8 rounded-full border-4 border-gray-700 relative overflow-clip md:-mb-2 max-md:-mt-2">
                             <Image src={story.image} 
                             alt="Profile Image" 
                             className="object-cover"
@@ -64,7 +64,7 @@ const SuccessStories = () => {
                             />
                         </div> 
                     </div>
-                <p className="text-gray-500">{story.role}</p>
+                <p className="text-gray-500 text-sm">{story.role}</p>
               </div>
             </div>
           ))}

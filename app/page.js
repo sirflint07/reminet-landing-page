@@ -1,8 +1,12 @@
 import About from "@/components/About";
+import BarGraphStats from "@/components/BarGraphStats";
 import Course from "@/components/Courses";
 import Hero from "@/components/Hero";
+import LoginForm from "@/components/LoginForm";
 import Partners from "@/components/Partners";
+import Pricing from "@/components/Pricing";
 import Stats from "@/components/Stats";
+import Students from "@/components/Students";
 import SuccessStories from "@/components/Testimonials";
 // import TestimonialsCarousel from "@/components/Testimonials";
 import Webnar from "@/components/Webnar";
@@ -17,6 +21,10 @@ export default function Home() {
         <Course />
         <Webnar />
         <SuccessStories />
+        <Students />
+        <LoginForm />
+        <Pricing />
+        <BarGraphStats />
       </div>
   );
 }
