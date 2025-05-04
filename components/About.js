@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; // If you're using Next.js. Otherwise, replace with <img>.
+import Image from 'next/image';
 
 const HeroSection = () => {
 
@@ -10,7 +10,7 @@ const HeroSection = () => {
   ]
   return (
     <section className="w-[90vw] mx-auto px-4 py-12 md:py-16 flex flex-col-reverse md:flex-row items-center gap-10 md:mb-10">
-      {/* Left Content */}
+      
       <div className="md:w-1/2 space-y-4">
         <span className="text-sm text-purple-600 uppercase tracking-widest font-semibold">
           — About Us
@@ -26,7 +26,7 @@ const HeroSection = () => {
         </button>
       </div>
 
-      {/* Small Devices (Image Collage) */}
+     
       <div className='md:hidden flex flex-col justify-center items-center gap-4'>
         {images.map((image, i) => (
           <div
@@ -43,12 +43,11 @@ const HeroSection = () => {
           </div>
         ))}
       </div>
-    {/* Medium Devices Upward */}
-      {/* Right Content (Image Collage) */}
+    
       <div className="md:w-1/2 flex flex-row justify-center md:justify-end md:relative h-80 w-full max-md:hidden md:visible">
-        {/* Container to position circles */}
+       
         <div className="relative w-[88%] h-[40vh]">
-          {/* Circle 1 */}
+         
           <div className="block md:absolute z-10 w-24 h-24 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-accent shadow-lg -top-4 md:-top-12 -left-20">
             <Image
               src="/img/person1.jpg"
@@ -57,7 +56,7 @@ const HeroSection = () => {
               objectFit="cover"
             />
           </div>
-          {/* Circle 2 (center) */}
+          
           <div className="block md:absolute z-20 w-28 h-28 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full overflow-hidden border-8 border-[#f6f5f9] top-16 left-16 md:top-20 md:left-20">
             <Image
               src="/img/person2.jpg"
@@ -66,7 +65,7 @@ const HeroSection = () => {
               objectFit="cover"
             />
           </div>
-          {/* Circle 3 */}
+          
           <div className="block md:absolute z-30 w-20 h-20 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-accent shadow-lg bottom-0 right-0 md:right-0 md:-bottom-20 lg:right-48 lg:-bottom-10">
             <Image
               src="/img/person3.jpg"

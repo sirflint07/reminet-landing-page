@@ -1,5 +1,5 @@
 import { Udemy } from "@/data/db";
-import Image from "next/image"; // If you're using Next.js; otherwise use a regular <img> tag
+import Image from "next/image";
 
 export default function Webnar() {
 

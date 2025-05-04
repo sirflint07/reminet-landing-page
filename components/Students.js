@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 
-// Dummy data – swap in your real student photos & testimonials
 const students = [
   {
     id: 1,
@@ -109,7 +108,7 @@ export default function MeetOurStudents() {
               whileHover={{ scale: 1.03, boxShadow: '0px 10px 20px rgba(0,0,0,0.1)' }}
               className="bg-white rounded-2xl p-6 flex flex-col h-full"
             >
-              <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
+              <div className="w-24 h-24 mx-auto rounded-full mb-4">
                 <img
                   src={student.image}
                   alt={student.name}

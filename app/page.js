@@ -4,6 +4,7 @@ import Course from "@/components/Courses";
 import Hero from "@/components/Hero";
 import LoginForm from "@/components/LoginForm";
 import Partners from "@/components/Partners";
+import PieChartStats from "@/components/PieChartStats";
 import Pricing from "@/components/Pricing";
 import Stats from "@/components/Stats";
 import Students from "@/components/Students";
@@ -25,6 +26,7 @@ export default function Home() {
         <LoginForm />
         <Pricing />
         <BarGraphStats />
+        <PieChartStats />
       </div>
   );
 }

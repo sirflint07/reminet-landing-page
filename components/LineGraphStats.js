@@ -21,9 +21,21 @@ import { Chart as ChartJS,
   )
 
 const LineGraphStats = () => {
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Webinar Stats',
+      },
+    },
+  }
   return (
     <div>
-      <line />
+      <Line options={options}/>
     </div>
   )
 }

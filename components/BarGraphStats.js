@@ -60,22 +60,23 @@ const BarGraphStats = () => {
 
   const options = {
     responsive: true,
-    maintainAspectRatio: false,          // <-- allow container to control height
+    maintainAspectRatio: false,
     plugins: {
       legend: { position: 'top' },
       title: {
         display: true,
         text: 'Students per Course on Reminet',
+        font: { size: 18 },
+        padding: { top: 20, bottom: 20 },
       },
     },
     scales: {
-      x: { ticks: { autoSkip: false } }, // ensure labels don’t drop on small screens
+      x: { ticks: { autoSkip: false } },
     },
   };
 
   return (
-    <div className="w-full p-5">
-      {/* full‑width on mobile, 2/3 on md+, fixed heights per breakpoint */}
+    <div className="w-full p-5 bg-white">
       <div className="w-full md:w-2/3 lg:w-1/2 mx-auto h-64 md:h-96 lg:h-[80vh]">
         <Bar data={data} options={options} />
       </div>

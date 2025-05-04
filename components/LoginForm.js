@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
+import {signIn} from "next-auth/react";
 
 export default function LoginForm() {
   const [firstname, setFirstName] = useState('');
@@ -21,6 +22,7 @@ export default function LoginForm() {
     phone: /^(?:\+?[\d]{3}|0)[\d]{8,10}$/
   };
 
+  const signin = async ({mail, passwor}) => {}
   const validateInput = (name, regex, value) => {
     setValidFields(vf => ({
       ...vf,
