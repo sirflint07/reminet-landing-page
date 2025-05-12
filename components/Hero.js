@@ -5,7 +5,6 @@ import {motion} from "framer-motion";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
-import { IoChatboxEllipses } from "react-icons/io5";
 
 export default function Home () {
 

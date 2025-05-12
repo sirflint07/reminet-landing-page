@@ -92,7 +92,7 @@ const PieChartStats = () => {
 
   return (
     <div className="w-full px-4 py-6 bg-white">
-      <div className="relative w-full h-[70vh] md:h-[50%] lg:w-1/2 mx-auto">
+      <div className="relative w-full max-md:h-[70vh] md:h-[70vh] lg:w-1/2 mx-auto">
         <Pie data={data} options={options} />
       </div>
     </div>

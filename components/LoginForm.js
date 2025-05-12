@@ -15,6 +15,7 @@ export default function LoginForm() {
   // Track validity per field
   const [validFields, setValidFields] = useState({});
 
+  // Regex Validation Patterns
   const Regex = {
     firstname: /^[a-zA-Z]+$/,
     lastname: /^[a-zA-Z]+$/,
